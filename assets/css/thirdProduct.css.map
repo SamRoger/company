@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,sBAAsB;EACrB,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,WAAW;EACpB,eAAe,EAAE,YAAY;EAC7B,gBAAgB,EAAE,GAAG;;AAEtB;;YAEY;EACX,UAAU,EAAE,KAAK",
+"sources": ["../sass/thirdProduct.scss"],
+"names": [],
+"file": "thirdProduct.css"
+}
