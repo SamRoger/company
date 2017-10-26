@@ -23,59 +23,44 @@ $(function (){
 //-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------
-// $.keyframe.define([{
-//     name: 'fadeOut',
-//     from: {'color': '#fff'},
-//     to: {'color': 'teal'}
-// }]);
+// $(window).scroll(function(){
+// var scrollTop2 = ($(this).scrollTop())
+//     if (scrollTop2 > 460) {
+//     	$(".intro").fadeOut(800)
+//     	$("p").fadeOut(800)
+//     }else if(scrollTop2 < 460){
+//     	$(".intro").fadeIn(800)
+//     	$("p").fadeIn(800)
+//     }
+// });
+// //-------------------------------------------------
+// $(window).scroll(function(){
+// var scrollTop2 = ($(this).scrollTop())
+// 	if(scrollTop2 > 805 && scrollTop2 < 1116){
 
-// $("li").on("mouseenter", function(){
-// 	$("li").playKeyframe({
-// 			    name: 'navFadeTeal',
-// 			    duration: "1s"
-// 	});
+// 		$(".firstProductsOnly").fadeIn(800)
+// 	}else{
+// 		$(".firstProductsOnly").fadeOut(800)
+// 	}
 // })
-//-------------------------------------------------
-//-------------------------------------------------
-//-------------------------------------------------
-$(window).scroll(function(){
-var scrollTop2 = ($(this).scrollTop())
-    if (scrollTop2 > 460) {
-    	$(".intro").fadeOut(800)
-    	$("p").fadeOut(800)
-    }else if(scrollTop2 < 460){
-    	$(".intro").fadeIn(800)
-    	$("p").fadeIn(800)
-    }
-});
-//-------------------------------------------------
-$(window).scroll(function(){
-var scrollTop2 = ($(this).scrollTop())
-	if(scrollTop2 > 805 && scrollTop2 < 1116){
-
-		$(".firstProductsOnly").fadeIn(800)
-	}else{
-		$(".firstProductsOnly").fadeOut(800)
-	}
-})
-//-------------------------------------------------
-$(window).scroll(function(){
-var scrollTop2 = ($(this).scrollTop())
-	if(scrollTop2 > 1610 && scrollTop2 < 1919){
-		$(".secondProductsOnly").fadeIn(800)
-	}else{
-		$(".secondProductsOnly").fadeOut(800)
-	}
-})
-//-------------------------------------------------
-$(window).scroll(function(){
-var scrollTop2 = ($(this).scrollTop())
-	if(scrollTop2 > 2409 && scrollTop2 < 2677){
-		$(".thirdProductsOnly").fadeIn(800)
-	}else{
-		$(".thirdProductsOnly").fadeOut(800)
-	}
-})
+// //-------------------------------------------------
+// $(window).scroll(function(){
+// var scrollTop2 = ($(this).scrollTop())
+// 	if(scrollTop2 > 1610 && scrollTop2 < 1919){
+// 		$(".secondProductsOnly").fadeIn(800)
+// 	}else{
+// 		$(".secondProductsOnly").fadeOut(800)
+// 	}
+// })
+// //-------------------------------------------------
+// $(window).scroll(function(){
+// var scrollTop2 = ($(this).scrollTop())
+// 	if(scrollTop2 > 2409 && scrollTop2 < 2677){
+// 		$(".thirdProductsOnly").fadeIn(800)
+// 	}else{
+// 		$(".thirdProductsOnly").fadeOut(800)
+// 	}
+// })
 //-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------
@@ -93,7 +78,7 @@ $(".home").on("click", function(){
 //-------------------------------------------------
 $(".firstProductButton").on("click", function(){
 	$("html, body").animate({ 
-		scrollTop: "930vh",
+		scrollTop: "928%",
 		specialEasing: {
 	    width: "ease",
 	    height: "easeOutBounce"
@@ -105,7 +90,7 @@ $(".firstProductButton").on("click", function(){
 //-------------------------------------------------
 $(".secondProductButton").on("click", function(){
 	$("html, body").animate({ 
-		scrollTop: "1731vh",
+		scrollTop: "1730%",
 		specialEasing: {
 	    width: "ease",
 	    height: "easeOutBounce"
@@ -117,7 +102,7 @@ $(".secondProductButton").on("click", function(){
 //-------------------------------------------------
 $(".thirdProductButton").on("click", function(){
 	$("html, body").animate({ 
-		scrollTop: "2534vh",
+		scrollTop: "2532%",
 		specialEasing: {
 	    width: "ease",
 	    height: "easeOutBounce"
@@ -150,37 +135,34 @@ $(function() {
 //-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$.keyframe.define([{
+    name: 'fadeIn',
+    from: {'opacity': '0'},
+    to: {'opacity': '1'}
+},{
+	name: 'fadeOut',
+	from: {'opacity': '1'},
+	to: {'opacity': '0'}
+}]);
+//-------------------------------------------------
+$(window).scroll(function(){
+	if($('.addCart1').visible(true)) {
+ 		$(".firstProductsOnly").playKeyframe({
+ 			name: 'fadeIn',
+ 			duration: "1s"
+ 		})
+ 		console.log("visible")
+	} else{
+		$(".firstProductsOnly").playKeyframe({
+ 			name: 'fadeOut',
+ 			duration: "1s"
+ 		})
+ 		console.log("NOT visible")
+	}
+});
+//-------------------------------------------------
+//-------------------------------------------------
+//-------------------------------------------------
 
 
 

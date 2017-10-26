@@ -18,6 +18,10 @@ section {
   position: fixed;
   z-index: 1000; }
 
+.test {
+  position: relative;
+  top: 10%; }
+
 @keyframes blurOn {
   from {
     filter: blur(0px); }
@@ -144,12 +148,13 @@ p {
   text-align: center;
   display: flex;
   justify-content: space-around;
-  background-color: #FAE5D3; }
+  background-color: #FAE5D3;
+  border: solid red; }
 
 .firstProductsOnly,
 .secondProductsOnly,
 .thirdProductsOnly {
-  display: none; }
+  opacity: 0; }
 
 .testDescription {
   color: #fff; }
@@ -165,12 +170,28 @@ p {
 .productNine {
   margin-top: 215px; }
 
-.addCart {
+.addCart1,
+.addCart2,
+.addCart3,
+.addCart4,
+.addCart5,
+.addCart6,
+.addCart7,
+.addCart8,
+.addCart9 {
   color: #fff;
   margin: 0 auto;
   padding: 10px;
   background-color: salmon; }
-  .addCart:hover {
+  .addCart1:hover,
+  .addCart2:hover,
+  .addCart3:hover,
+  .addCart4:hover,
+  .addCart5:hover,
+  .addCart6:hover,
+  .addCart7:hover,
+  .addCart8:hover,
+  .addCart9:hover {
     cursor: pointer; }
 
 .testImage {
