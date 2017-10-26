@@ -1,0 +1,33 @@
+.hero{
+	/*background-color: red;*/
+	margin-top: 125px;
+	height: 100vh;
+	padding: 0;
+	background-image: url("../img/nature.jpg"); 
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+.intro{
+    width: 53%;
+    text-align: center;
+    position: relative;
+    font-size: 84px;
+    background-color: #e0f7fa;
+    margin: 0 auto;
+    border-radius: 10px;
+    top: 20%;
+}
+p{
+	text-align: justify;
+    text-justify: inter-word;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.6);
+	width: 66%;
+	margin: 0 auto;
+    /*text-align: center;*/
+    color: #fff;
+    font-size: 29px;
+    position: relative;
+    top: 25%;
+}

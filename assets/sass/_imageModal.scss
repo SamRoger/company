@@ -1,0 +1,50 @@
+.imageModal{
+	display: none;
+	width: 63vw;
+	height: 48vh;
+	background-color: rgb(255, 204, 188);
+	position: fixed;
+	left: 19%;
+	top: 19%;
+	z-index: 1000;
+	border-radius: 10px;
+	position: fixed;
+}
+.close{
+	right: 10px;
+	top: 10px;
+}
+.productModal{
+	width: 20%;
+	height: 654px;
+	position: relative;
+    top: 10%;
+    left: 2%;
+	text-align: center;
+}
+.testImageModal{
+	width: 200px;
+	height: 200px;
+}
+.testDescriptionModal{
+	font-size: 20px;
+}
+.addCartModal{
+	width: 200px;
+	color: #fff;
+	margin: 0 auto;
+	padding: 10px; 
+	background-color: salmon;
+	&:hover{
+		cursor: pointer;
+	}
+}
+.descriptionModal{
+	font-weight: 600;
+}
+.descriptionContainerModal{
+    position: absolute;
+    left: 34%;
+    top: 35%;
+
+}

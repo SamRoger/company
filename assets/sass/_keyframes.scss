@@ -1,0 +1,13 @@
+@keyframes blurOn{
+	from{ filter:blur(0px); }
+	to{ filter:blur(3px); }
+}
+@keyframes blurOff{
+	from{ filter:blur(3px); }
+	to{ filter:blur(0px); }
+}
+@keyframes navMenuFade{
+	0%{ color: #fff; }
+	100%{ color: teal; }
+}
+

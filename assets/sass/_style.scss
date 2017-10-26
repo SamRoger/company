@@ -1,0 +1,22 @@
+body{
+	/*background-image: url("../img/fernando.jpg");*/
+	background-color: #fff;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	font-family: 'Poiret One', cursive;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+section{
+	height: 100%;
+	min-height: 100%;
+}
+
+.display{
+	top: 0;
+	position: fixed;
+	z-index: 1000;
+}

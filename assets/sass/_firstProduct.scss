@@ -1,0 +1,54 @@
+
+.firstProductContainer{
+	display: none;
+	margin-top: 100vh;
+	margin: 0 auto;
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	background-color: #FAE5D3;
+}
+
+.firstProductsOnly,
+.secondProductsOnly,
+.thirdProductsOnly{
+	display: none;
+}
+.testDescription{
+	color: #fff;
+}
+.productOne,
+.productTwo,
+.productThree,
+.productFour,
+.productFive,
+.productSix,
+.productSeven,
+.productEight,
+.productNine{
+	margin-top: 215px;
+
+}
+.addCart{
+	color: #fff;
+	margin: 0 auto;
+	padding: 10px; 
+	background-color: salmon;
+	&:hover{
+		cursor: pointer;
+	}
+}
+.testImage{
+	/*background-color: rgb(224, 247, 250);*/
+	border-radius: 10px;
+	cursor: pointer;
+	width: 300px;
+	height: 300px;
+
+}
+
+.firstScroll{
+	position: absolute;
+	z-index: 101;
+}
