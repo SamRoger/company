@@ -1,0 +1,29 @@
+.aboutContainer{
+	display: none;
+	height: 95vh;
+	width: 95%;
+	background-color: #F2F4F4;
+	margin: 0 auto;
+	position: fixed;
+	top: 25px;
+	left: 0;
+	right: 0;
+	z-index: 99999;
+	border-radius: 5px;
+}
+.about{
+	text-align: center;
+	position: relative;
+	top: 15px;
+	font-size: 50px;
+	text-decoration: underline;
+}
+.closeAbout{
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	top: 4px;
+	right: 4px;
+	position: absolute;
+	z-index: 9999;
+}

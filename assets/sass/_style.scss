@@ -23,5 +23,11 @@ section{
 
 .test{
 	position: relative;
-	top: 10%;
+	top: 10%rr;
+}
+.mrBlurry{
+	position: relative;
+	z-index: 999999999999;
+	/*background-color: black;*/
+	transform: blur("20px")
 }

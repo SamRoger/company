@@ -9,16 +9,20 @@
 	background-position: center;
 }
 .intro{
+	opacity: 1;
+	position: relative;
     width: 53%;
     text-align: center;
-    position: relative;
+	margin-top: 50px !important;
     font-size: 84px;
     background-color: #e0f7fa;
     margin: 0 auto;
     border-radius: 10px;
     top: 20%;
 }
-p{
+p{	
+	opacity: 1;
+	margin-top: 50px !important;
 	text-align: justify;
     text-justify: inter-word;
 	border-radius: 10px;
@@ -30,4 +34,10 @@ p{
     font-size: 29px;
     position: relative;
     top: 25%;
+}
+.heroContents{
+
+	position: fixed;
+	margin-bottom: 100px;
+	width: 100%;
 }

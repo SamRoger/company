@@ -2,27 +2,6 @@ $("document").ready(function(){
 //-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------
-$(function (){
-	var controller = new ScrollMagic.Controller({
-		globalSceneOptions: {
-			triggerHook: 'onLeave'
-		}
-	});
-	// get all slides
-	var slides = document.querySelectorAll("section.panel");
-	// create scene for every slide
-	for (var i=0; i<slides.length; i++) {
-		new ScrollMagic.Scene({
-				triggerElement: slides[i]
-			})
-			.setPin(slides[i])
-			// .addIndicators() // add indicators (requires plugin)
-			.addTo(controller);
-	}
-});
-//-------------------------------------------------
-//-------------------------------------------------
-//-------------------------------------------------
 // $(window).scroll(function(){
 // var scrollTop2 = ($(this).scrollTop())
 //     if (scrollTop2 > 460) {
@@ -34,15 +13,84 @@ $(function (){
 //     }
 // });
 // //-------------------------------------------------
-// $(window).scroll(function(){
-// var scrollTop2 = ($(this).scrollTop())
-// 	if(scrollTop2 > 805 && scrollTop2 < 1116){
-
-// 		$(".firstProductsOnly").fadeIn(800)
-// 	}else{
-// 		$(".firstProductsOnly").fadeOut(800)
-// 	}
-// })
+// //-------------------------------------------------
+// //-------------------------------------------------
+// //-------------------------------------------------
+$.keyframe.define([{
+    name: 'fadeIn',
+    from: {'opacity': '0'},
+    to: {'opacity': '1'}
+},{
+	name: 'fadeOut',
+	from: {'opacity': '1'},
+	to: {'opacity': '0'}
+},{
+	name: 'moveUp',
+	from: {'bottom': '0px'},
+	to: {'bottom': '30px'}
+}]);
+// //-------------------------------------------------
+// //-------------------------------------------------
+// //-------------------------------------------------
+// //-------------------------------------------------
+$(window).scroll(function(){
+if($(".addCart1").visible(true)){
+	$(".firstProductsOnly").playKeyframe({
+ 			name: 'fadeIn',
+ 			duration: '1s'
+ 		})
+	}else{
+		$(".firstProductsOnly").playKeyframe({
+ 			name: 'fadeOut',
+ 			duration: "1s"
+ 		})
+	}
+})
+// //-------------------------------------------------
+$(window).scroll(function(){
+if($(".addCart4").visible(true)){
+	$(".secondProductsOnly").playKeyframe({
+ 			name: 'fadeIn',
+ 			duration: "1s"
+ 		})
+	}else{
+		$(".secondProductsOnly").playKeyframe({
+ 			name: 'fadeOut',
+ 			duration: "1s"
+ 		})
+	}
+})
+// //-------------------------------------------------
+$(window).scroll(function(){
+if($(".addCart7").visible(true)){
+	$(".thirdProductsOnly").playKeyframe({
+ 			name: 'fadeIn',
+ 			duration: "1s"
+ 		})
+	}else{
+		$(".thirdProductsOnly").playKeyframe({
+ 			name: 'fadeOut',
+ 			duration: "1s"
+ 		})
+	}
+})
+// //-------------------------------------------------
+$(window).scroll(function(){
+if($(".testImage").visible(true)){
+	$("p, .intro").playKeyframe({
+ 			name: 'fadeOut',
+ 			duration: "1s"
+ 		})
+	}else{
+		$("p, .intro").playKeyframe({
+ 			name: 'fadeIn',
+ 			duration: "1s"
+ 		})
+	}
+})
+// //-------------------------------------------------
+// //-------------------------------------------------
+// //-------------------------------------------------
 // //-------------------------------------------------
 // $(window).scroll(function(){
 // var scrollTop2 = ($(this).scrollTop())
@@ -64,53 +112,38 @@ $(function (){
 //-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------
-$(".home").on("click", function(){
-	$("html, body").animate({ 
-		scrollTop: "0px",
-		specialEasing: {
-	    width: "ease",
-	    height: "easeOutBounce"
-    }
+//-------------------------------------------------
+$(window).scroll(function(){
 
-	},1000);
-	console.log("about Button Clicked")
+});
+//-------------------------------------------------
+//-------------------------------------------------
+//-------------------------------------------------
+//-------------------------------------------------
+$(".home").on("click", function(){
+	$(".hero").scrollintoview({
+		duration: 800
+	})
 })
 //-------------------------------------------------
 $(".firstProductButton").on("click", function(){
-	$("html, body").animate({ 
-		scrollTop: "928%",
-		specialEasing: {
-	    width: "ease",
-	    height: "easeOutBounce"
-    }
-
-	},1000);
-	console.log("about Button Clicked")
+	$(".firstProductContainer").scrollintoview({
+		duration: 800
+	})
 })
 //-------------------------------------------------
 $(".secondProductButton").on("click", function(){
-	$("html, body").animate({ 
-		scrollTop: "1730%",
-		specialEasing: {
-	    width: "ease",
-	    height: "easeOutBounce"
-    }
-
-	},1000);
-	console.log("about Button Clicked")
+	$(".secondProductContainer").scrollintoview({
+		duration: 800
+	})
 })
 //-------------------------------------------------
 $(".thirdProductButton").on("click", function(){
-	$("html, body").animate({ 
-		scrollTop: "2532%",
-		specialEasing: {
-	    width: "ease",
-	    height: "easeOutBounce"
-    }
-
-	},1000);
-	console.log("about Button Clicked")
+	$(".thirdProductContainer").scrollintoview({
+		duration: 800
+	})
 })
+//-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------
@@ -119,10 +152,19 @@ $(".testImage").on("click", function(){
 	$(".imageModal").fadeIn(300)
 })
 //-------------------------------------------------
-$(".close").on("click", function(){
-	$(".bodyContainer").fadeTo(300, 1)
+$(".closeAbout").on("click", function(){
+	$(".aboutContainer").fadeOut(300)
 	$(".imageModal").fadeOut(300)
 })
+//-------------------------------------------------
+$(".aboutButton").on("click", function(){
+	$(".aboutContainer").fadeIn(300)
+})
+//-------------------------------------------------
+$(".close").on("click", function(){
+	$(".imageModal").fadeOut(300)
+})
+//-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------
@@ -135,15 +177,6 @@ $(function() {
 //-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------
-$.keyframe.define([{
-    name: 'fadeIn',
-    from: {'opacity': '0'},
-    to: {'opacity': '1'}
-},{
-	name: 'fadeOut',
-	from: {'opacity': '1'},
-	to: {'opacity': '0'}
-}]);
 //-------------------------------------------------
 $(window).scroll(function(){
 	if($('.addCart1').visible(true)) {
@@ -151,15 +184,14 @@ $(window).scroll(function(){
  			name: 'fadeIn',
  			duration: "1s"
  		})
- 		console.log("visible")
 	} else{
 		$(".firstProductsOnly").playKeyframe({
  			name: 'fadeOut',
  			duration: "1s"
  		})
- 		console.log("NOT visible")
 	}
 });
+//-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------

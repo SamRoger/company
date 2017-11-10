@@ -20,7 +20,13 @@ section {
 
 .test {
   position: relative;
-  top: 10%; }
+  top: 10% rr; }
+
+.mrBlurry {
+  position: relative;
+  z-index: 999999999999;
+  /*background-color: black;*/
+  transform: blur("20px"); }
 
 @keyframes blurOn {
   from {
@@ -42,7 +48,7 @@ section {
   width: 63vw;
   height: 48vh;
   background-color: #ffccbc;
-  position: fixed;
+  position: relative;
   left: 19%;
   top: 19%;
   z-index: 1000;
@@ -54,12 +60,13 @@ section {
   top: 10px; }
 
 .productModal {
-  width: 20%;
-  height: 654px;
+  border: .5px solid black;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
   position: relative;
-  top: 10%;
-  left: 2%;
-  text-align: center; }
+  left: 10px;
+  top: 10px; }
 
 .testImageModal {
   width: 200px;
@@ -69,7 +76,9 @@ section {
   font-size: 20px; }
 
 .addCartModal {
-  width: 200px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
   color: #fff;
   margin: 0 auto;
   padding: 10px;
@@ -77,18 +86,25 @@ section {
   .addCartModal:hover {
     cursor: pointer; }
 
-.descriptionModal {
-  font-weight: 600; }
-
-.descriptionContainerModal {
+.close {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
   position: absolute;
-  left: 34%;
-  top: 35%; }
+  right: 4px;
+  topr: 4px;
+  bottom: -131px; }
+
+.productModalInfo {
+  margin-top: 15px;
+  position: absolute;
+  left: 35%; }
 
 footer {
   height: 15vh;
   background-color: gray;
-  text-align: center; }
+  text-align: center;
+  margin-top: 0px !important; }
 
 .footerContainer {
   position: relative; }
@@ -104,9 +120,11 @@ footer {
   background-position: center; }
 
 .intro {
+  opacity: 1;
+  position: relative;
   width: 53%;
   text-align: center;
-  position: relative;
+  margin-top: 50px !important;
   font-size: 84px;
   background-color: #e0f7fa;
   margin: 0 auto;
@@ -114,6 +132,8 @@ footer {
   top: 20%; }
 
 p {
+  opacity: 1;
+  margin-top: 50px !important;
   text-align: justify;
   text-justify: inter-word;
   border-radius: 10px;
@@ -126,19 +146,26 @@ p {
   position: relative;
   top: 25%; }
 
+.heroContents {
+  position: fixed;
+  margin-bottom: 100px;
+  width: 100%; }
+
 .thirdProductContainer {
   height: 100vh;
   text-align: center;
   display: flex;
   justify-content: space-around;
-  background-color: #F5EEF8; }
+  background-color: #F5EEF8;
+  position: relative; }
 
 .secondProductContainer {
   height: 100vh;
   text-align: center;
   display: flex;
   justify-content: space-around;
-  background-color: #D0ECE7; }
+  background-color: #D0ECE7;
+  position: relative; }
 
 .firstProductContainer {
   display: none;
@@ -149,11 +176,12 @@ p {
   display: flex;
   justify-content: space-around;
   background-color: #FAE5D3;
-  border: solid red; }
+  position: relative; }
 
 .firstProductsOnly,
 .secondProductsOnly,
 .thirdProductsOnly {
+  position: relative;
   opacity: 0; }
 
 .testDescription {
@@ -206,13 +234,12 @@ p {
   z-index: 101; }
 
 .headerContainer {
-  opacity: 0.4;
   position: fixed;
   top: 0;
   z-index: 100;
   width: 100%;
   height: 125px;
-  background-color: #cfd8dc;
+  background-color: red;
   width: 100%;
   margin: 0 auto; }
 
@@ -240,5 +267,34 @@ li {
 
 .navMenuFade {
   animation: navMenuFade 1s forwards; }
+
+.aboutContainer {
+  display: none;
+  height: 95vh;
+  width: 95%;
+  background-color: #F2F4F4;
+  margin: 0 auto;
+  position: fixed;
+  top: 25px;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  border-radius: 5px; }
+
+.about {
+  text-align: center;
+  position: relative;
+  top: 15px;
+  font-size: 50px;
+  text-decoration: underline; }
+
+.closeAbout {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  top: 4px;
+  right: 4px;
+  position: absolute;
+  z-index: 9999; }
 
 /*# sourceMappingURL=main.css.map */

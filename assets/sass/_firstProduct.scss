@@ -8,13 +8,13 @@
 	display: flex;
 	justify-content: space-around;
 	background-color: #FAE5D3;
-	border: solid red;
-
+	position: relative;
 }
 
 .firstProductsOnly,
 .secondProductsOnly,
 .thirdProductsOnly{
+	position: relative;
 	opacity: 0;
 }
 .testDescription{
@@ -30,7 +30,6 @@
 .productEight,
 .productNine{
 	margin-top: 215px;
-
 }
 .addCart1,
 .addCart2,
