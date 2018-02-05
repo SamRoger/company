@@ -1,12 +1,8 @@
 .headerContainer{
-    position: fixed;
-    top: 0;
-    z-index: 100;
-	width: 100%;
-	height:125px;
-	background-color: red;
+    background-color: rgb(250, 215, 160);
     width: 100%;
-    margin: 0 auto;
+    position: fixed;
+    z-index: 1;
 }
 .logo{
     width: 90px;
@@ -16,22 +12,49 @@
     margin-left: 182px;
 }
 ul{
-	bottom: 60px;
-	left: 40%;
-	position: relative;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    z-index: 100;
 }
 li {
+    text-shadow: 1px 1px 1px black;
     font-weight: 600;
     font-size: 20px;
     margin-left: 20px;
     position: relative;
     display: inline;
-    color: #fff;
+    color: rgb(40, 180, 99);
     &:hover{
-    	// color: teal;
+    	color: teal;
     	cursor: pointer;
     }
 }
 .navMenuFade{
     animation: navMenuFade 1s forwards;
+}
+.cart{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 58px;
+    right: 606px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.qty{
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    color: #000;
+    font-weight: 900;
+    position: absolute;
+    bottom: 63px;
+    left: 539px;
+    font-size: 13px;
+    padding-bottom: 8px;
+    font-family: 'Passion One', cursive;
 }

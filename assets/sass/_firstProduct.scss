@@ -1,6 +1,6 @@
 
 .firstProductContainer{
-	display: none;
+	/*display: none;*/
 	margin-top: 100vh;
 	margin: 0 auto;
 	height: 100vh;
@@ -9,6 +9,11 @@
 	justify-content: space-around;
 	background-color: #FAE5D3;
 	position: relative;
+}
+.benefits{
+	font-size: 100px;
+	position: relative;
+	top: 250px;
 }
 
 .firstProductsOnly,
@@ -49,13 +54,66 @@
 		cursor: pointer;
 	}
 }
-.testImage{
-	/*background-color: rgb(224, 247, 250);*/
+.mainImgOpacity{
+	opacity: .7;
+	&:hover{
+		opacity: 1;
+		transition: opacity .8s;
+	}
+}
+.testImage1{
 	border-radius: 10px;
 	cursor: pointer;
 	width: 300px;
 	height: 300px;
-
+}
+.testImage2{
+	border-radius: 10px;
+	cursor: pointer;
+	width: 300px;
+	height: 300px;
+}
+.testImage3{
+	border-radius: 10px;
+	cursor: pointer;
+	width: 300px;
+	height: 300px;
+}
+.testImage4{
+	border-radius: 10px;
+	cursor: pointer;
+	width: 300px;
+	height: 300px;
+}
+.testImage5{
+	border-radius: 10px;
+	cursor: pointer;
+	width: 300px;
+	height: 300px;
+}
+.testImage6{
+	border-radius: 10px;
+	cursor: pointer;
+	width: 300px;
+	height: 300px;
+}
+.testImage7{
+	border-radius: 10px;
+	cursor: pointer;
+	width: 300px;
+	height: 300px;
+}
+.testImage8{
+	border-radius: 10px;
+	cursor: pointer;
+	width: 300px;
+	height: 300px;
+}
+.testImage9{
+	border-radius: 10px;
+	cursor: pointer;
+	width: 300px;
+	height: 300px;
 }
 
 .firstScroll{

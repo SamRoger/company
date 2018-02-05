@@ -1,27 +1,36 @@
 .hero{
 	/*background-color: red;*/
-	margin-top: 125px;
+	/*margin-top: 125px;*/
 	height: 100vh;
 	padding: 0;
-	background-image: url("../img/nature.jpg"); 
+	background-image: url("../img/ginger.jpg"); 
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
 }
-.intro{
-	opacity: 1;
+.reel, .ingridients{
+	display: none;
+}
+.really{
+	display: none;
+	font-family: 'Bad Script', cursive;
+	color: rgb(244, 208, 63);
+	text-shadow: 1px 1px 2px black;
 	position: relative;
-    width: 53%;
-    text-align: center;
-	margin-top: 50px !important;
     font-size: 84px;
-    background-color: #e0f7fa;
-    margin: 0 auto;
-    border-radius: 10px;
-    top: 20%;
+    top: 150px;
+    left: 30%;
+}
+.ingridients{
+	font-family: 'Bad Script', cursive;
+	color: rgb(244, 208, 63);
+	text-shadow: 1px 1px 2px black;
+	position: relative;
+    font-size: 84px;
+    top: 260px;
+    left: 20%;
 }
 p{	
-	opacity: 1;
 	margin-top: 50px !important;
 	text-align: justify;
     text-justify: inter-word;
@@ -36,8 +45,45 @@ p{
     top: 25%;
 }
 .heroContents{
-
 	position: fixed;
 	margin-bottom: 100px;
 	width: 100%;
+	display: inline-flex;
 }
+.fadeClass{
+	opacity: 0;
+	transition: opacity .5s;
+}
+.fadeBackClass{
+	opacity: 1;
+	transition: opacity .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 .aboutContainer{
 	display: none;
 	height: 95vh;
-	width: 95%;
+	width: 80%;
 	background-color: #F2F4F4;
 	margin: 0 auto;
 	position: fixed;
@@ -26,4 +26,15 @@
 	right: 4px;
 	position: absolute;
 	z-index: 9999;
+}
+
+.aboutContent{
+	width: 80%;
+	position: relative;
+	top: 30px;
+	margin: 0 auto;
+}
+
+h3{
+	text-align: center;
 }

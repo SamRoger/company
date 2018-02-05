@@ -1,17 +1,4 @@
 $("document").ready(function(){
-//-------------------------------------------------
-//-------------------------------------------------
-//-------------------------------------------------
-// $(window).scroll(function(){
-// var scrollTop2 = ($(this).scrollTop())
-//     if (scrollTop2 > 460) {
-//     	$(".intro").fadeOut(800)
-//     	$("p").fadeOut(800)
-//     }else if(scrollTop2 < 460){
-//     	$(".intro").fadeIn(800)
-//     	$("p").fadeIn(800)
-//     }
-// });
 // //-------------------------------------------------
 // //-------------------------------------------------
 // //-------------------------------------------------
@@ -76,22 +63,16 @@ if($(".addCart7").visible(true)){
 })
 // //-------------------------------------------------
 $(window).scroll(function(){
-if($(".testImage").visible(true)){
-	$("p, .intro").playKeyframe({
- 			name: 'fadeOut',
- 			duration: "1s"
- 		})
+	if($(".testImage").visible(true)){
+		$("p, .intro").addClass("fadeClass")
 	}else{
-		$("p, .intro").playKeyframe({
- 			name: 'fadeIn',
- 			duration: "1s"
- 		})
+		$("p, .intro").removeClass("fadeClass")
 	}
 })
-// //-------------------------------------------------
-// //-------------------------------------------------
-// //-------------------------------------------------
-// //-------------------------------------------------
+// //----------------------------------------------
+// //----------------------------------------------
+// //----------------------------------------------
+// //----------------------------------------------
 // $(window).scroll(function(){
 // var scrollTop2 = ($(this).scrollTop())
 // 	if(scrollTop2 > 1610 && scrollTop2 < 1919){
@@ -100,7 +81,7 @@ if($(".testImage").visible(true)){
 // 		$(".secondProductsOnly").fadeOut(800)
 // 	}
 // })
-// //-------------------------------------------------
+// //---------------------------------------------
 // $(window).scroll(function(){
 // var scrollTop2 = ($(this).scrollTop())
 // 	if(scrollTop2 > 2409 && scrollTop2 < 2677){
@@ -109,13 +90,6 @@ if($(".testImage").visible(true)){
 // 		$(".thirdProductsOnly").fadeOut(800)
 // 	}
 // })
-//-------------------------------------------------
-//-------------------------------------------------
-//-------------------------------------------------
-//-------------------------------------------------
-$(window).scroll(function(){
-
-});
 //-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------
@@ -147,22 +121,107 @@ $(".thirdProductButton").on("click", function(){
 //-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------
-$(".testImage").on("click", function(){
-	$(".bodyContainer").fadeTo(300, 0.4)
-	$(".imageModal").fadeIn(300)
+$(".mrBlurry").click(function(){
+	$(".mrBlurry, .imageModal1, .aboutContainer").fadeOut(200)
 })
 //-------------------------------------------------
-$(".closeAbout").on("click", function(){
+$(".closeAbout").click(function(){
 	$(".aboutContainer").fadeOut(300)
-	$(".imageModal").fadeOut(300)
+		$(".imageModal").fadeOut(300)
+			$(".mrBlurry").fadeOut(200)
 })
 //-------------------------------------------------
-$(".aboutButton").on("click", function(){
-	$(".aboutContainer").fadeIn(300)
+$(".close").click(function(){
+	$(".imageModal1").fadeOut(200)
+		$(".mrBlurry").fadeOut(200)
 })
 //-------------------------------------------------
-$(".close").on("click", function(){
-	$(".imageModal").fadeOut(300)
+$(".aboutButton").click(function(){
+	$(".aboutContainer").fadeIn(200)
+		$(".mrBlurry").fadeIn(200)
+
+})
+//-------------------------------------------------
+$(".testImage1").on("click",function(){
+	$(".imageModal1").fadeIn(200)
+	$(".testImageModal1")[0].src = 'assets/img/1.png'
+	$(".testImageModal2")[0].src = 'assets/img/2.png'
+	$(".testImageModal3")[0].src = 'assets/img/3.png'
+		$(".testDescriptionModal").html('Name Of Product')
+			$(".productModalInfo").html('Product ONE Information Goes Here. quasi cupiditate dolores quod,rsit dignissimos deserunt vel tenetur consectetur, error saepe dicta cumque perferendis.')
+				$(".mrBlurry").fadeIn(200)
+})
+$(".testImage2").click(function(){
+	$(".imageModal1").fadeIn(300)
+	$(".testImageModal1")[0].src = 'assets/img/3.png'
+	$(".testImageModal2")[0].src = 'assets/img/2.png'
+	$(".testImageModal3")[0].src = 'assets/img/1.png'
+		$(".testDescriptionModal").html('Product Two')
+			$(".productModalInfo").html('Product TWO Information Goes Here')
+				$(".mrBlurry").fadeIn(200)
+})
+$(".testImage3").click(function(){
+	$(".imageModal1").fadeIn(300)
+	$(".testImageModal1")[0].src = 'assets/img/3.png'
+	$(".testImageModal2")[0].src = 'assets/img/3.png'
+	$(".testImageModal3")[0].src = 'assets/img/3.png'
+		$(".testDescriptionModal").html('Product Three')
+			$(".productModalInfo").html('Product THREE Information Goes Here')
+				$(".mrBlurry").fadeIn(200)
+})
+$(".testImage4").click(function(){
+	$(".imageModal1").fadeIn(300)
+	$(".testImageModal1")[0].src = 'assets/img/4.png'
+	$(".testImageModal2")[0].src = 'assets/img/4.png'
+	$(".testImageModal3")[0].src = 'assets/img/4.png'
+		$(".testDescriptionModal").html('Product Four')
+			$(".productModalInfo").html('Product FOUR Information Goes Here')
+				$(".mrBlurry").fadeIn(200)
+})
+$(".testImage5").click(function(){
+	$(".imageModal1").fadeIn(300)
+	$(".testImageModal1")[0].src = 'assets/img/5.png'
+	$(".testImageModal2")[0].src = 'assets/img/5.png'
+	$(".testImageModal3")[0].src = 'assets/img/5.png'
+		$(".testDescriptionModal").html('Product Five')
+			$(".productModalInfo").html('Product FIVE Information Goes Here')
+				$(".mrBlurry").fadeIn(200)
+})
+$(".testImage6").click(function(){
+	$(".imageModal1").fadeIn(300)
+	$(".testImageModal1")[0].src = 'assets/img/6.png'
+	$(".testImageModal2")[0].src = 'assets/img/6.png'
+	$(".testImageModal3")[0].src = 'assets/img/6.png'
+		$(".testDescriptionModal").html('Product Six')
+			$(".productModalInfo").html('Product SIX Information Goes Here')
+				$(".mrBlurry").fadeIn(200)
+})
+$(".testImage7").click(function(){
+	$(".imageModal1").fadeIn(300)
+	$(".testImageModal1")[0].src = 'assets/img/7.png'
+	$(".testImageModal2")[0].src = 'assets/img/7.png'
+	$(".testImageModal3")[0].src = 'assets/img/7.png'
+		$(".testDescriptionModal").html('Product Seven')
+			$(".productModalInfo").html('Product SEVEN Information Goes Here')
+				$(".mrBlurry").fadeIn(200)
+})
+$(".testImage8").click(function(){
+	$(".imageModal1").fadeIn(300)
+	$(".testImageModal1")[0].src = 'assets/img/8.png'
+	$(".testImageModal2")[0].src = 'assets/img/8.png'
+	$(".testImageModal3")[0].src = 'assets/img/8.png'
+		$(".testDescriptionModal").html('Product Eight')
+			$(".productModalInfo").html('Product EIGHT Information Goes Here')
+				$(".mrBlurry").fadeIn(200)
+})
+$(".testImage9").click(function(){
+	$(".imageModal1").fadeIn(300)
+	$(".testImageModal1")[0].src = 'assets/img/9.png'
+	$(".testImageModal2")[0].src = 'assets/img/9.png'
+	$(".testImageModal3")[0].src = 'assets/img/9.png'
+		$(".testDescriptionModal").html('Product Nine')
+			$(".productModalInfo").html('Product NINE Information Goes Here')
+				$(".mrBlurry").fadeIn(200)
 })
 //-------------------------------------------------
 //-------------------------------------------------
@@ -178,29 +237,19 @@ $(function() {
 //-------------------------------------------------
 //-------------------------------------------------
 //-------------------------------------------------
-$(window).scroll(function(){
-	if($('.addCart1').visible(true)) {
- 		$(".firstProductsOnly").playKeyframe({
- 			name: 'fadeIn',
- 			duration: "1s"
- 		})
-	} else{
-		$(".firstProductsOnly").playKeyframe({
- 			name: 'fadeOut',
- 			duration: "1s"
- 		})
-	}
-});
-//-------------------------------------------------
-//-------------------------------------------------
-//-------------------------------------------------
-//-------------------------------------------------
-
-
-
-
-
-
+$(document).ready(function(){
+	$(".really").fadeIn(1200)
+})
+$(document).ready(function(){
+	setTimeout(function(){
+		$(".reel").fadeIn(2500)
+	},500)
+})
+$(document).ready(function(){
+	setTimeout(function(){
+		$(".ingridients").fadeIn(4000)
+	},1000)
+})
 
 
 

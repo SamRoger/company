@@ -1,6 +1,6 @@
 body{
 	/*background-image: url("../img/fernando.jpg");*/
-	background-color: #fff;
+	background-color: rgb(250, 215, 160);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -18,16 +18,18 @@ section{
 .display{
 	top: 0;
 	position: fixed;
-	z-index: 1000;
+	z-index: 100;
 }
 
 .test{
 	position: relative;
-	top: 10%rr;
+	top: 10%;
 }
 .mrBlurry{
-	position: relative;
-	z-index: 999999999999;
-	/*background-color: black;*/
-	transform: blur("20px")
+	display: none;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.7);
 }
